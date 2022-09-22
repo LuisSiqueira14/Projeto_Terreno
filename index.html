@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERRENOS BALDIOS</title>
+    <script type="text/javascript">
+        function salvar() {
+            let rua = document.getElementById("nome").value
+            //alert("Olá," + nome) 
+            //alert("A comunidade Terreno Baldio Lovers agradeçe sua contribuição <3")
+
+            document.getElementById ("mensagem").innerHTML= "A comunidade Terreno Baldio Lovers agradeçe sua contribuição <3"
+            document.getElementById ("mensagem").style.display="block"
+            return false;   
+        }
+
+    </script>
+    <style type="text/css">
+        #mensagem {
+            width: 25%;
+            height: 25%;
+            background-color: rgb(153, 206, 147);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            z-index: 10;
+            display: none;
+            left: 36.5%;
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            TERRENOS BALDIOS
+        </h1>
+        <h2>
+            Cadastros
+        </h2>
+    </header>
+    <section>
+
+        <div id="mensagem">
+
+        </div>
+        <form onsubmit="return salvar()">
+           <div>
+               <label>NOME</label>
+                <input type="text" id="nome" name="nome" />
+           </div>
+           
+           <br>
+
+            <div>
+                <label>RUA:</label>
+                <input type="text" id="rua" name="rua" />
+            </div>
+        
+        <br>
+        
+            <div>
+                <label>BAIRRO:</label>
+                <input type="text" id="bairro" name="bairro" />
+            </div>
+        
+        <br>
+        
+            <div>
+                <label>NÚMERO:</label>
+                <input type="text" id="numero-endereco" name="numero-endereco" />
+            </div>
+        
+        <br>
+        
+            <div>
+                <label>CIDADE:</label>
+                <input type="text" id="cidade" name="cidade" />
+            </div>
+        
+        <br>
+        
+            <div>
+                <label>MATAGAL?</label>
+                <input type="checkbox" id="matagal" name="matagal">
+            </div>
+        
+        <br>
+        
+            <label>Deseja salvar e colaborar com a comunidade de apreciadores de Terrenos Baldios?</label>
+            <button type="submit"> Salvar</button>
+        </form>
+
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
